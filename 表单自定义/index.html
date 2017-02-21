@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.ico"/>
+
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/input_style.css">
+</head>
+
+<body>
+
+
+
+<div class="radio_1" data-type="radio" data-name="a" data-value="qw1"></div>
+
+<div class="radio_1" data-type="radio"  data-name="a" data-value="qw2"></div>
+<div class="radio_1" data-type="radio"  data-name="a" data-value="qw3"></div>
+<div class="radio_1" data-type="radio"  data-name="a" data-value="qw4"></div>
+
+<div class="radio_2" data-type="radio"  data-name="b" data-value="qw"></div>
+<div class="radio_2" data-type="radio"  data-name="b" data-value="qw"></div>
+<div class="radio_2" data-type="radio"  data-name="b" data-value="qw"></div>
+<div class="radio_2" data-type="radio"  data-name="b" data-value="qw"></div>
+
+
+<script src="jquery.min.js"></script>
+<script src="main.js"></script>
+<script>
+$(function(){
+$('.radio_1').set_input({
+	icon:['iconfont','&#xe72f;','&#xe71f;'],
+	click_ele:function(e){console.log(e.prop('data-state'));console.log(e.attr('data-value'))}
+});
+
+
+$('.radio_2').set_input({});
+
+});
+</script>
+</body>
+</html>
